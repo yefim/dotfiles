@@ -2,7 +2,7 @@ This repo shall be a compilation of all my bash scripts, functions, and other aw
 
 To use, clone this directory into your home directory then simply add
 
-`PATH=$PATH:~/scripts`
+`PATH=$PATH:~/bash`
 
 and 
 

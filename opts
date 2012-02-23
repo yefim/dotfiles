@@ -1,0 +1,21 @@
+#!/bin/sh
+rflag=
+mflag=
+while getopts rm: name
+do
+  case $name in
+  r)    rflag=1;;
+  m)    mflag=1
+        mval="$OPTARG";;
+  ?)   printf "Usage: %s: [-r] [-m value] args\n" $0
+        exit 2;;
+  esac
+done
+if [ ! -z "$rflag" ]; then
+  printf "Option -r specified\n"
+fi
+if [ ! -z "$mflag" ]; then
+  printf 'Option -m "%s" specified\n' "$mval"
+fi
+shift $(($OPTIND - 1))
+printf "Remaining arguments are: %s\n" "$*"

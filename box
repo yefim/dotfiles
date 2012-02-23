@@ -1,2 +1,32 @@
 #!/bin/sh
-mv $1 ~/Dropbox
+# copies a file into ~/Dropbox
+# -m moves the files
+# -r recursively copies directory
+rflag=
+mflag=
+while getopts rm name
+do
+  case $name in
+  r)    rflag=1;;
+  m)    mflag=1;;
+  ?)   printf "Usage: %s: [-r] [-m] args\n" $0
+        exit 2;;
+  esac
+done
+shift $(($OPTIND - 1))
+file="$*"
+# printf "\n\n\n\n%s\n\n\n\n\n" $file
+if [ ! -z "$rflag" ] && [ ! -z "$mflag" ]; then
+  mv -u $file ~/Dropbox
+  exit 0
+fi
+if [ ! -z "$rflag" ]; then
+  cp -r $file ~/Dropbox	
+  exit 0
+fi
+if [ ! -z "$mflag" ]; then
+  mv $file ~/Dropbox
+  exit 0
+fi
+cp $file ~/Dropbox
+exit 0
