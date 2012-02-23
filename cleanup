@@ -1,4 +1,5 @@
 #!/bin/sh
+# cleans up .bak files from your home dir, your tmp dir, etc.
 clean_dir() {
   rm $1/*.bak 2> /dev/null
 };
