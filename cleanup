@@ -1,0 +1,7 @@
+#!/bin/sh
+clean_dir() {
+  rm $1/*.bak 2> /dev/null
+};
+clean_dir ~;
+clean_dir /tmp;
+clean_dir /usr/local/bin;
