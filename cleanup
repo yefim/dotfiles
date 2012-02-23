@@ -4,4 +4,4 @@ clean_dir() {
 };
 clean_dir ~;
 clean_dir /tmp;
-clean_dir /usr/local/bin;
+clean_dir /usr/local/bin
