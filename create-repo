@@ -1,0 +1,6 @@
+#!/bin/bash
+read -s -p "GitHub password: " pass
+echo ""
+# I assume the GitHub API and authentication works because I don't want to parse shit
+curl -u "yefim323:$pass" https://api.github.com/user/repos -d "{\"name\":\"$1\"}" > /dev/null
+git remote add origin git@github.com:yefim323/$1.git
