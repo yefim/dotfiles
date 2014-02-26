@@ -18,7 +18,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'skammer/vim-css-color'
 Bundle 'groenewege/vim-less'
-Bundle ' roman/golden-ratio'
+Bundle 'roman/golden-ratio'
 "Bundle 'Valloric/YouCompleteMe'
 
 let g:syntastic_python_flake8_post_args='--ignore=E121,E111'
