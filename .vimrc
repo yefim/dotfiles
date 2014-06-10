@@ -1,25 +1,27 @@
-set nocompatible
-filetype off
+set shell=/bin/bash
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'ervandew/supertab'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mintplant/vim-literate-coffeescript'
-Bundle 'gregsexton/MatchTag'
-Bundle 'godlygeek/tabular'
-Bundle 'kien/ctrlp.vim'
-Bundle 'skammer/vim-css-color'
-Bundle 'groenewege/vim-less'
-Bundle 'roman/golden-ratio'
-"Bundle 'Valloric/YouCompleteMe'
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'ervandew/supertab'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mintplant/vim-literate-coffeescript'
+Plugin 'gregsexton/MatchTag'
+Plugin 'godlygeek/tabular'
+Plugin 'kien/ctrlp.vim'
+Plugin 'skammer/vim-css-color'
+Plugin 'groenewege/vim-less'
+Plugin 'roman/golden-ratio'
+Plugin 'flazz/vim-colorschemes'
+call vundle#end()            " required
+filetype plugin indent on
 
 let g:syntastic_python_flake8_post_args='--ignore=E121,E111'
 
