@@ -1,9 +1,0 @@
-[user]
-	name = Geoffrey Vedernikoff
-	email = yefim323@gmail.com
-[credential]
-	helper = cache --timeout=360000
-[color]
-	ui = true
-[core]
-	excludesfile = ~/.gitignore
