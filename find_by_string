@@ -1,2 +1,0 @@
-#!/bin/sh
-grep -r "$1" . --color=always
