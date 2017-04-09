@@ -64,5 +64,6 @@ let g:ackhighlight = 1
 
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+nnoremap <Leader>s :Ack!<Space><C-r><C-w><Space>
 
 highlight link QuickFixLine Normal
