@@ -12,6 +12,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mileszs/ack.vim'
+Plug 'google/vim-searchindex'
 
 call plug#end()
 
@@ -45,6 +46,9 @@ command WQ wq
 command Wq wq
 command W w
 command Q q
+
+map q: <Nop>
+nnoremap Q <nop>
 
 let g:syntastic_python_flake8_post_args = '--ignore=E121,E111'
 let g:syntastic_javascript_checkers = ['eslint']
