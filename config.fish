@@ -3,6 +3,9 @@ set PATH /usr/local/sbin $PATH
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 set PATH $HOME/go/bin $PATH
+set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
+
+set -x EDITOR /usr/local/bin/nvim
 
 set -x GOPATH $HOME/go
 
