@@ -8,11 +8,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'ervandew/supertab'
 Plug 'chriskempson/base16-vim'
 Plug 'roman/golden-ratio'
+Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
 Plug 'google/vim-searchindex'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -53,7 +57,7 @@ nnoremap Q <nop>
 let g:syntastic_python_flake8_post_args = '--ignore=E121,E111'
 let g:syntastic_javascript_checkers = ['eslint']
 
-let mapleader=","
+let mapleader=" "
 
 " The Silver Searcher
 if executable('ag')
@@ -71,3 +75,7 @@ nnoremap <Leader>a :Ack!<Space>
 nnoremap <Leader>s :Ack!<Space><C-r><C-w><Space>
 
 highlight link QuickFixLine Normal
+
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
