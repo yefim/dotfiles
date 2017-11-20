@@ -81,3 +81,5 @@ highlight link QuickFixLine Normal
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+set noswapfile
