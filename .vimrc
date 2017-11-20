@@ -9,14 +9,16 @@ Plug 'ervandew/supertab'
 Plug 'chriskempson/base16-vim'
 Plug 'roman/golden-ratio'
 Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'google/vim-searchindex'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/syntastic'
+Plug 'mtscout6/syntastic-local-eslint.vim'
 
 call plug#end()
 
