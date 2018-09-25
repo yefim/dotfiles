@@ -17,8 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'google/vim-searchindex'
 Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/syntastic'
-Plug 'mtscout6/syntastic-local-eslint.vim'
+Plug 'w0rp/ale'
 
 call plug#end()
 
