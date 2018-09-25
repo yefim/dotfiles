@@ -55,9 +55,6 @@ command Q q
 map q: <Nop>
 nnoremap Q <nop>
 
-let g:syntastic_python_flake8_post_args = '--ignore=E121,E111'
-let g:syntastic_javascript_checkers = ['eslint']
-
 let mapleader=" "
 
 " The Silver Searcher
@@ -76,9 +73,5 @@ nnoremap <Leader>a :Ack!<Space>
 nnoremap <Leader>s :Ack!<Space><C-r><C-w><Space>
 
 highlight link QuickFixLine Normal
-
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
 
 set noswapfile
