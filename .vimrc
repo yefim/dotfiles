@@ -18,6 +18,10 @@ Plug 'tpope/vim-rhubarb'
 Plug 'google/vim-searchindex'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
+Plug 'junegunn/vim-peekaboo'
+Plug 'tpope/vim-surround'
+Plug 'RRethy/vim-illuminate'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
 
@@ -73,5 +77,7 @@ nnoremap <Leader>a :Ack!<Space>
 nnoremap <Leader>s :Ack!<Space><C-r><C-w><Space>
 
 highlight link QuickFixLine Normal
+
+let g:rainbow_active = 1
 
 set noswapfile
