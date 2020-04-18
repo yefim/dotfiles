@@ -22,6 +22,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'tpope/vim-surround'
 Plug 'RRethy/vim-illuminate'
 Plug 'luochen1990/rainbow'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
@@ -81,3 +82,9 @@ highlight link QuickFixLine Normal
 let g:rainbow_active = 1
 
 set noswapfile
+
+let g:NERDCreateDefaultMappings = 0
+let g:NERDSpaceDelims = 1
+
+nnoremap <Leader>c :call NERDComment(0,"toggle")<Enter>
+vnoremap <Leader>c :call NERDComment(0,"toggle")<Enter>
